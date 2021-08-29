@@ -9,27 +9,28 @@
 <body>
 <!-- partial:index.partial.html -->
 <div id="buttons">
-  <button id="btnHelp" onclick="clickHelp();">Help</button>
-  <button id="btnPlay" onclick="clickPlaynow();">Play</button>
-  <button id="btnAbout" onclick="clickAbout();">About</button> <button id="btnHome" onclick="clickHome();">Home</button>
+  <button id="btnHelp" onclick="clickHelp();" class="block">Help</button>
+  <button id="btnPlay" onclick="clickPlaynow();" class="block">Play</button>
+  <button id="btnAbout" onclick="clickAbout();" class="block">About</button> <button id="btnHome" onclick="clickHome();" class="block">Home</button>
 </div>
 <hr />
 <div id="pages">
   <div id="helppage">
         <img src="https://github.com/rlucas689/aidan/blob/main/Help.gif?raw=true" alt="Help">
   </div>
-  <div id="playnowpage" >
+  <div id="playnowpage" style="background-color: #04dbac;" >
+    <br/><br/>&nbsp;&nbsp;&nbsp;
+    <button class="block" id="btnStart" onclick="startGame();">Start</button>
+    <button class="block" id="btnStop" onclick="endGame();">Stop</button>
+    <button class="block" id="btnReset" onclick="resetGame();">Reset</button>
+    <br/><br/>&nbsp;&nbsp;&nbsp;
+    <button class="block" id="btnReset" onclick="easyMode();">Easy Mode</button>
+    <button class="block" id="btnReset" onclick="hardMode();">Hard Mode</button>
+    <button class="block" id="btnReset" onclick="superHardMode();">Super Hard Mode</button>
+    <br/><br/>&nbsp;&nbsp;&nbsp;
+    <canvas id="pong" width="800" height="600" ></canvas>
     <br/><br/>
-    <button id="btnStart" onclick="startGame();">Start</button>
-    <button id="btnStop" onclick="endGame();">Stop</button>
-    <button id="btnReset" onclick="resetGame();">Reset</button>
-    <br/><br/>
-    <button id="btnReset" onclick="easyMode();">Easy Mode</button>
-    <button id="btnReset" onclick="hardMode();">Hard Mode</button>
-    <button id="btnReset" onclick="superHardMode();">Super Hard Mode</button>
-    <canvas id="pong" width="800" height="600"></canvas>
-    <br/><br/>
-    <img src="https://github.com/rlucas689/aidan/blob/main/Game.gif?raw=true" alt="Game">
+  <!--  <img src="https://github.com/rlucas689/aidan/blob/main/Game.gif?raw=true" alt="Game"> -->
   </div>
   <div id="homepage">
         <img src="https://github.com/rlucas689/aidan/blob/main/Welcome.gif?raw=true" alt="Welcome">

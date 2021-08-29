@@ -92,6 +92,7 @@ function movePaddle(evt){
 // set the ball back to the middle
 // whenever a point has been scored
 function resetBall() {
+  message = ''
   // set the ball's x-coordinates and y-coordinates to the middle of the screen
   ball.x = canvas.width / 2;
   ball.y = canvas.height / 2;
